@@ -72,6 +72,7 @@ OUTER:
 	return result
 }
 
+// returns masked string with * in input positions
 func maskWithPositions(input string, pos []int) string {
 	sort.Ints(pos)
 	for _, p := range pos {
@@ -84,7 +85,6 @@ func maskWithPositions(input string, pos []int) string {
 // MaskPan returns string with masked PANs (Primary Account Number) in it
 // Pan detection based on Luhn algorithm (check wiki)
 func MaskPan(input string) string {
-	// integers map
 	intMap := createIntMap(input)
 	result := input
 	found := true

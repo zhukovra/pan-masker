@@ -1,4 +1,4 @@
-module mp-go-logger
+module pcd-mask
 
 go 1.17
 
