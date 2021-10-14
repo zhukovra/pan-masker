@@ -1,4 +1,4 @@
-module pcd-mask
+module github.com/zhukovra/pcd-mask
 
 go 1.17
 
